@@ -27,6 +27,7 @@ nav{
 
 header>div{
     padding-top: 35.64vh;
+    z-index: 1;
 }
 
 header video{
@@ -36,7 +37,7 @@ header video{
 
 header div h1{
     box-sizing: border-box;
-    margin-bottom: 10%;
+    margin-bottom: 12.68vh;
 }
 
 header div strong{
@@ -45,7 +46,7 @@ header div strong{
 }
 
 header div ul{
-    margin: 0 auto;
+    margin: 0 auto 6.11vh;
     display: flex;
     justify-content: center;
 }
@@ -60,11 +61,27 @@ header div ul li:not(:nth-last-child(1)){
 
 header div ul li a{
     display: block;
-    
+}
+
+header>div div{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+header>div div a{
+    text-align: center;
+    width: 8.43%;
+    line-height: 43px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 21.5px;
+    padding: 0 2.23%;
 }
 
 nav div{
-    position: absolute;
+    position: fixed;
+    cursor: pointer;
 }
 
 nav div span{

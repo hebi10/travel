@@ -1,6 +1,27 @@
+/* Noto Sans */
+header div h1,
+header div ul li a,
+section:nth-of-type(1) div p,
+section:nth-of-type(1) strong,
+section:nth-of-type(3) h2,
+section:nth-of-type(3) ul li b,
+section:nth-of-type(3) ol li h3,
+section:nth-of-type(4) h2{
+    font-family: 'Noto Sans CJK KR', sans-serif;
+}
+
+/* Jeju Myeongjo */
+header div strong,
+section:nth-of-type(2) ul li a,
+section:nth-of-type(3) p,
+section:nth-of-type(3) ol li strong,
+section:nth-of-type(3) ol li em,
+section:nth-of-type(4) p{
+    font-family: 'Jeju Myeongjo', serif;
+}
+
 header div h1{
     color: white;
-    font-family: 'Noto Sans CJK KR', sans-serif;
     font-size: 100px;
     font-weight: 50;
     letter-spacing: 0.2em;
@@ -9,7 +30,6 @@ header div h1{
 
 header div strong{
     color: white;
-    font-family: 'Jeju Myeongjo', serif;
     font-size: 25px;
     font-weight: 300;
     letter-spacing: 0.059em;
@@ -18,21 +38,18 @@ header div strong{
 
 header div ul li a{
     color: white;
-    font-family: 'Noto Sans CJK KR', sans-serif;
     font-size: 20px;
     font-weight: 50;
     letter-spacing: 0.2em;
 }
 
 section:nth-of-type(1) div p{
-    font-family: 'Noto Sans CJK KR', sans-serif;
     font-size: 42px;
     font-weight: 50;
     letter-spacing: 0.1em;
 }
 
 section:nth-of-type(1) strong{
-    font-family: 'Noto Sans CJK KR', sans-serif;
     font-size: 30px;
     font-weight: 50;
     letter-spacing: 0.1em;
@@ -41,15 +58,13 @@ section:nth-of-type(1) strong{
 
 section:nth-of-type(2) ul li a{
     color: white;
-    font-family: 'Jeju Myeongjo', serif;
-    font-size: 70px;
+    font-size: 44px;
     font-weight: 50;
     letter-spacing: 0.2em;
     text-align: center;
 }
 
 section:nth-of-type(3) h2{
-    font-family: 'Noto Sans CJK KR', sans-serif;
     font-size: 50px;
     font-weight: 200;
     letter-spacing: 0.01em;
@@ -57,21 +72,18 @@ section:nth-of-type(3) h2{
 }
 
 section:nth-of-type(3) p{
-    font-family: 'Jeju Myeongjo', serif;
     font-size: 18px;
     font-weight: 200;
     text-align: center;
 }
 
 section:nth-of-type(3) ul li b{
-    font-family: 'Noto Sans CJK KR', sans-serif;
     font-size: 20px;
     font-weight: 50;
     letter-spacing: 0.02em;
 }
 
 section:nth-of-type(3) ol li h3{
-    font-family: 'Noto Sans CJK KR', sans-serif;
     font-size: 26px;
     font-weight: 200;
     letter-spacing: 0.01em;
@@ -79,7 +91,6 @@ section:nth-of-type(3) ol li h3{
 }
 
 section:nth-of-type(3) ol li strong{
-    font-family: 'Jeju Myeongjo', serif;
     font-size: 13px;
     font-weight: 200;
     letter-spacing: -0.01em;
@@ -89,9 +100,22 @@ section:nth-of-type(3) ol li strong{
 
 section:nth-of-type(3) ol li em{
     color: #3FABDC;
-    font-family: 'Jeju Myeongjo', serif;
     font-size: 10px;
     font-weight: 200;
     display: block;
+    text-align: center;
+}
+
+section:nth-of-type(4) h2{
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+section:nth-of-type(4) p{
+    color: #585858;
+    font-size: 18px;
+    font-weight: 200;
     text-align: center;
 }
