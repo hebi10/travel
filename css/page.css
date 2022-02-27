@@ -142,6 +142,7 @@ section:nth-of-type(3) ul li:nth-child(3).active b{
 
 section:nth-of-type(3) ul li:nth-child(4).active b{
     background-color: #94FFFB;
+    border-radius: 5px;
 }
 
 section:nth-of-type(3) ol{
@@ -160,7 +161,6 @@ section:nth-of-type(3) ol li{
     width: 22.85%;
     height: 15.62%;
     padding: 30.46vh 0 2.65vh;
-    border: 1px solid black;
     box-shadow: 5px 5px 10px #999;
     border-radius: 10px;
 }
@@ -181,63 +181,63 @@ section:nth-of-type(3) ol li{
     background-size: 100% 30.46vh;
 }
 
-section:nth-of-type(3) ol:nth-child(1) li:nth-child(1){
-    background: url(../images/videos_1_01.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(1) li:nth-child(2){
-    background: url(../images/videos_1_02.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(1) li:nth-child(3){
-    background: url(../images/videos_1_03.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(1) li:nth-child(4){
-    background: url(../images/videos_1_04.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(2) li:nth-child(1){
-    background: url(../images/videos_2_01.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(2) li:nth-child(2){
-    background: url(../images/videos_2_02.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(2) li:nth-child(3){
-    background: url(../images/videos_2_03.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(2) li:nth-child(4){
-    background: url(../images/videos_2_04.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(3) li:nth-child(1){
-    background: url(../images/videos_3_01.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(3) li:nth-child(2){
-    background: url(../images/videos_3_02.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(3) li:nth-child(3){
-    background: url(../images/videos_3_03.png) no-repeat center / cover;
-}
-
-section:nth-of-type(3) ol:nth-child(3) li:nth-child(4){
-    background: url(../images/videos_3_04.png) no-repeat center / cover;
-}
-
 section:nth-of-type(3) ol:nth-of-type(1) li:nth-child(1){
-    background: url(../images/videos_4_01.png) no-repeat top / 100% 30.46vh;
+    background: url(../images/videos_1_01.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(1) li:nth-child(2){
+    background: url(../images/videos_1_02.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(1) li:nth-child(3){
+    background: url(../images/videos_1_03.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(1) li:nth-child(4){
+    background: url(../images/videos_1_04.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(2) li:nth-child(1){
+    background: url(../images/videos_2_01.png) no-repeat top / 100% 30.46vh;
 }
 
 section:nth-of-type(3) ol:nth-of-type(2) li:nth-child(2){
-    background: url(../images/videos_4_02.png) no-repeat top / 100% 30.46vh;
+    background: url(../images/videos_2_02.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(2) li:nth-child(3){
+    background: url(../images/videos_2_03.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(2) li:nth-child(4){
+    background: url(../images/videos_2_04.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(3) li:nth-child(1){
+    background: url(../images/videos_3_01.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(3) li:nth-child(2){
+    background: url(../images/videos_3_02.png) no-repeat top / 100% 30.46vh;
 }
 
 section:nth-of-type(3) ol:nth-of-type(3) li:nth-child(3){
+    background: url(../images/videos_3_03.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(3) li:nth-child(4){
+    background: url(../images/videos_3_04.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(4) li:nth-child(1){
+    background: url(../images/videos_4_01.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(4) li:nth-child(2){
+    background: url(../images/videos_4_02.png) no-repeat top / 100% 30.46vh;
+}
+
+section:nth-of-type(3) ol:nth-of-type(4) li:nth-child(3){
     background: url(../images/videos_4_03.png) no-repeat top / 100% 30.46vh;
 }
 
