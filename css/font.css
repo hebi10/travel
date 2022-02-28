@@ -114,7 +114,6 @@ section:nth-of-type(4) h2{
 }
 
 section:nth-of-type(4) p{
-    color: #585858;
     font-size: 18px;
     font-weight: 200;
     text-align: center;

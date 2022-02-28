@@ -82,6 +82,13 @@ header>div div a{
 nav div{
     position: fixed;
     cursor: pointer;
+    z-index: 100;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+
+nav div.scroll{
+    opacity: 1;
 }
 
 nav div span{
@@ -109,8 +116,57 @@ nav div:nth-child(2) span{
     width: 32px;
     height: 3px;
     background-color: white;
+    transition-duration: 0.3s;
 }
 
 nav div:nth-child(2) span:not(:nth-last-child(1)){
     margin-bottom: 9px;
+}
+
+nav div:nth-child(2).active span:nth-child(1){
+    transform: rotate(-45deg) translate(-4px, 2px);
+    width: 20px;
+}
+
+/* nav div:nth-child(2).active span:nth-child(2){
+    transform: translateX(3px);
+} */
+
+nav div:nth-child(2).active span:nth-child(3){
+    transform: rotateZ(45deg) translate(-4px, -2px);
+    width: 20px;
+}
+
+nav div ol{
+    z-index: 100;
+    position: absolute;
+    right: 70px;
+    top: -8px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition-duration: 1s;
+}
+
+nav div.active ol{
+    width: 570px;
+}
+
+nav div ol li:not(:nth-last-child(1)){
+    padding: 0 45px;
+    border-right: 1px solid white;
+}
+
+nav div ol li{
+    padding: 0 45px;
+    border-right: none;
+}
+
+nav div ol li a{
+    display: block;
+    color: white;
 }
