@@ -166,3 +166,23 @@ nav div ol li a{
     display: block;
     color: white;
 }
+
+footer{
+    padding-top: 71.11vh;
+    background: url(../images/footer_back.png);
+}
+
+footer strong,
+footer p,
+footer em{
+    display: block;
+    margin-bottom: 1vh;
+}
+
+footer strong:nth-last-of-type(1){
+    margin-bottom: 2.77vh;
+}
+
+footer p:nth-last-of-type(1){
+    margin-bottom: 3.7vh;
+}
