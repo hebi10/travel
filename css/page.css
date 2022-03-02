@@ -374,3 +374,65 @@ section:nth-of-type(4) ol li:not(:nth-last-child(1)){
 section:nth-of-type(4) ol li.active{
     background-color: #000;
 }
+
+section:nth-of-type(4) a{
+    display: block;
+    width: 400px;
+    position: absolute;
+}
+
+section:nth-of-type(4) ul li:nth-child(1) a h2,
+section:nth-of-type(4) ul li:nth-child(5) a h2,
+section:nth-of-type(4) ul li:nth-child(6) a h2{
+    margin-bottom: 1.85vh;
+}
+
+section:nth-of-type(4) ul li:nth-child(1) a p,
+section:nth-of-type(4) ul li:nth-child(5) a p,
+section:nth-of-type(4) ul li:nth-child(6) a p{
+    margin-bottom: 1.85vh;
+}
+
+section:nth-of-type(4) ul li:nth-child(2) a h2,
+section:nth-of-type(4) ul li:nth-child(3) a h2,
+section:nth-of-type(4) ul li:nth-child(4) a h2{
+    margin-bottom: 5.55vh;
+}
+
+section:nth-of-type(4) ul li:nth-child(2) a p,
+section:nth-of-type(4) ul li:nth-child(3) a p,
+section:nth-of-type(4) ul li:nth-child(4) a p{
+    margin-bottom: 3.05vh;
+}
+
+section:nth-of-type(4) ul li:nth-child(1) a{
+    bottom: 12.48vh;
+    left: 37.7%;
+}
+
+section:nth-of-type(4) ul li:nth-child(2) a{
+    bottom: 35.46vh;
+    left: 22.34%;
+}
+
+section:nth-of-type(4) ul li:nth-child(3) a{
+    bottom: 14.16vh;
+    left: 28.64%;
+    color: white;
+}
+
+section:nth-of-type(4) ul li:nth-child(4) a{
+    bottom: 10.74vh;
+    left: 13.54%;
+}
+
+section:nth-of-type(4) ul li:nth-child(5) a{
+    bottom: 26.11vh;
+    left: 63.48%;
+}
+
+section:nth-of-type(4) ul li:nth-child(6) a{
+    bottom: 32.5vh;
+    left: 63.12%;
+    color: white;
+}

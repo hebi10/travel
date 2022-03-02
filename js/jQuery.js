@@ -1,5 +1,5 @@
 $(function(){
-    // alert('웹페이지로 제작중이며 1180px 이상의 size에서 봐주시는걸 권장합니다.');
+    alert('웹페이지로 제작하였으며 1180px 이상의 size에서 봐주시는걸 권장합니다.');
     fullpage();
     nav_active()
     typingText();
@@ -67,10 +67,10 @@ function fullpage(){
             $('nav div').eq(0).find('span').css('border','3px solid #8DCEEF');
             $('nav div').eq(1).find('span').css('background-color','#8DCEEF');
             $('nav div ol').css('background-color','#8DCEEF');
-        }else if($('section:nth-of-type(5)').offset().top == $(window).scrollTop()){
+        }else if($('footer').offset().top == $(window).scrollTop()){
             $('nav div').addClass('scroll');
             $('nav div').eq(0).find('span').css('border','3px solid #8DCEEF');
-            $('nav div').eq(1).find('span').css('background-color','#8DCEEF');
+            $('nav div').eq(1).find('span').css('background-color','white');
             $('nav div ol').css('background-color','#8DCEEF');
         }else{
             $('nav div').removeClass('scroll');
