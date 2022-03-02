@@ -162,9 +162,9 @@ section:nth-of-type(3) ol{
 }
 
 section:nth-of-type(3) ol li.active{
-    transform: translateX(0px);
-    transition-duration: 0.4s;
-    transition-delay: 0.2s;
+    transform: translateX(0px) !important;
+    transition-duration: 0.6s;
+    transition-delay: 0.5s;
     opacity: 1;
 }
 
@@ -175,8 +175,8 @@ section:nth-of-type(3) ol li{
     padding: 30.46vh 0 2.65vh;
     box-shadow: 2px 2px 10px #999;
     border-radius: 10px;
-    transition-duration: 0.7s;
-    transform: translateX(20px);
+    transition-duration: 0.6s;
+    transform: translateX(-50px);
     opacity: 0;
 }
 

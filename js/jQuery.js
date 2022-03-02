@@ -1,4 +1,5 @@
 $(function(){
+    // alert('웹페이지로 제작하였으며 되도록 1180px 이상의 size에서 봐주시는걸 권장합니다.');
     fullpage();
     nav_active()
     typingText();
@@ -44,7 +45,7 @@ function fullpage(){
             $('nav div').addClass('scroll');
             $('nav div').eq(0).find('span').css('border','3px solid white');
             $('nav div').eq(1).find('span').css('background-color','white');
-            $('nav div ol').css('background-color','white');
+            $('nav div ol').css('background-color','rgba(255, 255, 255, 0.3)');
         }else if($('section:nth-of-type(1)').offset().top == $(window).scrollTop()){
             $('nav div').addClass('scroll');
             $('nav div').eq(0).find('span').css('border','3px solid #8DCEEF');
@@ -54,7 +55,7 @@ function fullpage(){
             $('nav div').addClass('scroll');
             $('nav div').eq(0).find('span').css('border','3px solid white');
             $('nav div').eq(1).find('span').css('background-color','white');
-            $('nav div ol').css('background-color','white');
+            $('nav div ol').css('background-color','rgba(255, 255, 255, 0.3)');
         }else if($('section:nth-of-type(3)').offset().top == $(window).scrollTop()){
             $('nav div').addClass('scroll');
             $('nav div').eq(0).find('span').css('border','3px solid #8DCEEF');
@@ -72,6 +73,7 @@ function fullpage(){
             $('nav div ol').css('background-color','#8DCEEF');
         }else{
             $('nav div').removeClass('scroll');
+            $('nav div ol').css('background-color','rgba(255, 255, 255, 0)');
         }
     });
 
@@ -146,16 +148,16 @@ function video_active(){
     })
     
     ul_list.hover(function(e){
+        let act_location_before = $('section:nth-of-type(3) ul li.active').index();
         ul_list.removeClass('active');
         ol_list.removeClass('active');
         $(this).addClass('active');
-        let act_location = $('section:nth-of-type(3) ul li.active').index();
-        $('section:nth-of-type(3) ol').eq(act_location).addClass('active');
+        let act_location_after = $('section:nth-of-type(3) ul li.active').index();
+        $('section:nth-of-type(3) ol').eq(act_location_after).addClass('active');
         $(this).find('li').addClass('active');
         $('section:nth-of-type(3) ol').removeClass('active')
-        $('section:nth-of-type(3) ol').eq(act_location).addClass('active');
-        $('section:nth-of-type(3) ol').eq(act_location).children().addClass('active');
-
+        $('section:nth-of-type(3) ol').eq(act_location_after).addClass('active');
+        $('section:nth-of-type(3) ol').eq(act_location_after).children().addClass('active');
 
         $('#marker').css({
             'z-index' : '-1',
@@ -166,6 +168,12 @@ function video_active(){
             'background-color' : $('section:nth-of-type(3) ul li.active').attr('data-color'),
             'width' : e.target.offsetWidth
         })
+
+        if(act_location_before < act_location_after){
+            $('section:nth-of-type(3) ol').eq(act_location_before).children('li').css('transform','translateX(50px)')
+        }else{
+            $('section:nth-of-type(3) ol').eq(act_location_before).children('li').css('transform','translateX(-50px)')
+        }
 
     })
 
