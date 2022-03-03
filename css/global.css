@@ -1,6 +1,6 @@
 body{overflow: hidden;}
 
-html,body,[data-scroll="fullpage"]{
+html,body,[data-page="scroll_wrap"]{
     height: 100%;
     box-sizing: border-box;
 }

@@ -1,6 +1,6 @@
 $(function(){
     // alert('웹페이지로 제작하였으며 1180px 이상의 size에서 봐주시는걸 권장합니다.');
-    fullpage();
+    scroll_page();
     nav_active()
     typingText();
     img_hover();
@@ -8,31 +8,25 @@ $(function(){
     shop_slide();
 });
 
-function fullpage(){
-    $('html').animate({
+function scroll_page(){
+    $('html,body').animate({
         scrollTop : 0
     })
 
-    var pageindex = $('[data-scroll="fullpage"]').length;
-    for (var i=1;i<=pageindex;i++){
-        $('.wrap > ul').append('<li></li>');
-    };
-    $('ul li').eq(0).addClass('active');
-
-    $('[data-scroll="fullpage"]').on('mousewheel DOMMouseScroll',function(e){
+    $('[data-page="scroll_wrap"]').on('mousewheel DOMMouseScroll',function(e){
         e.preventDefault();
         var deltaX = e.originalEvent.wheelDelta;
         if($('html').is(':animated')){
             return;
         }
         if(deltaX > 0){
-            if($(this).prev().attr('data-scroll') == 'fullpage'){
+            if($(this).prev().attr('data-page') == 'scroll_wrap'){
                 $('html').stop().animate({
                     scrollTop : $(this).prev().offset().top
                 })
             }
         }else{
-            if($(this).next().attr('data-scroll') == 'fullpage'){
+            if($(this).next().attr('data-page') == 'scroll_wrap'){
                 $('html').stop().animate({
                     scrollTop : $(this).next().offset().top
                 })
@@ -82,7 +76,7 @@ function fullpage(){
         $('.wrap > ul li').removeClass('active');
         $(this).addClass('active');
         $('html').animate({
-            scrollTop : $('[data-scroll="fullpage"]').eq($('.wrap > ul li.active').index()).offset().top
+            scrollTop : $('[data-page="scroll_wrap"]').eq($('.wrap > ul li.active').index()).offset().top
         })
     });
 }
@@ -117,7 +111,7 @@ function typingText(){
                     } 
                 }
                 if(typingBool==false){ 
-                    typingBool=true;     
+                    typingBool=true;
                     var tyInt = setInterval(typing,100);
                 } 
             },600)
@@ -182,15 +176,15 @@ function shop_slide(){
     $('section:nth-of-type(4) ul li').addClass('active');
     $('section:nth-of-type(4) ol li').eq(0).addClass('active');
     $('section:nth-of-type(4) div:nth-of-type(2) span').eq(0).addClass('active');
+    $('section:nth-of-type(4) ul').addClass('active');
 
     function ul_act(){
         if($('section:nth-of-type(4) ul li.active').length == 1){
             $('section:nth-of-type(4) ul.active li').addClass('active');
             $('section:nth-of-type(4) ul').addClass('active');
         }else if($('section:nth-of-type(4) ul li.active').length == 6){
-            $('section:nth-of-type(4) ul li').removeClass('active');
+            $('section:nth-of-type(4) ul.active li').removeClass('active');
             $('section:nth-of-type(4) ul.active li').eq(5).addClass('active');
-            $('section:nth-of-type(4) ul').removeClass('active');
             $('section:nth-of-type(4) ul').addClass('active');
         }else{
             $('section:nth-of-type(4) ul').removeClass('active');
