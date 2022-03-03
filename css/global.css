@@ -169,7 +169,7 @@ nav div ol li a{
 
 footer{
     padding-top: 71.11vh;
-    background: url(../images/footer_back.png);
+    background: url(../images/footer_back.png) no-repeat center / cover;
 }
 
 footer strong,
