@@ -51,10 +51,6 @@ header div ul{
     justify-content: center;
 }
 
-header div ul li{
-    padding: 0 70px;
-}
-
 header div ul li:not(:nth-last-child(1)){
     border-right: 1px solid white;
 }
@@ -67,16 +63,6 @@ header>div div{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-}
-
-header>div div a{
-    text-align: center;
-    width: 8.43%;
-    line-height: 43px;
-    color: white;
-    border: 1px solid white;
-    border-radius: 21.5px;
-    padding: 0 2.23%;
 }
 
 nav div{
@@ -133,33 +119,9 @@ nav div:nth-child(2).active span:nth-child(3){
     width: 20px;
 }
 
-nav div ol{
-    z-index: 100;
-    position: absolute;
-    right: 70px;
-    top: -8px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px 0;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 0;
-    background-color: rgba(255, 255, 255, 0.3);
-    transition-duration: 1s;
-}
-
-nav div.active ol{
-    width: 570px;
-}
-
 nav div ol li:not(:nth-last-child(1)){
     padding: 0 45px;
     border-right: 1px solid white;
-}
-
-nav div ol li{
-    padding: 0 45px;
-    border-right: none;
 }
 
 nav div ol li a{
@@ -185,4 +147,90 @@ footer strong:nth-last-of-type(1){
 
 footer p:nth-last-of-type(1){
     margin-bottom: 3.7vh;
+}
+
+@media screen and (max-width:719px){
+
+}
+
+@media screen and (min-width:720px) and (max-width:1079px){
+    header div ul li{
+        padding: 0 42px;
+    }
+
+    header>div div a{
+        text-align: center;
+        width: 15%;
+        line-height: 43px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 21.5px;
+        padding: 0 2.23%;
+    }
+
+    nav div ol li{
+        padding: 0 27px;
+        border-right: none;
+    }
+
+    nav div.active ol{
+        width: 534px;
+    }
+
+    nav div ol{
+        z-index: 100;
+        position: absolute;
+        right: 45px;
+        top: -8px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 0;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 0;
+        transition-duration: 1s;
+        background-color: rgba(63, 171, 220, 0.7);
+    }
+    /* 수정 */
+}
+
+@media screen and (min-width:1080px){
+    header div ul li{
+        padding: 0 70px;
+    }
+
+    header>div div a{
+        text-align: center;
+        width: 8.43%;
+        line-height: 43px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 21.5px;
+        padding: 0 2.23%;
+    }
+
+    nav div ol li{
+        padding: 0 45px;
+        border-right: none;
+    }
+
+    nav div.active ol{
+        width: 570px;
+    }
+
+    nav div ol{
+        z-index: 100;
+        position: absolute;
+        right: 70px;
+        top: -8px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 0;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 0;
+        transition-duration: 1s;
+        background-color: rgba(63, 171, 220, 0.7);
+    }
+    /* 수정 */
 }

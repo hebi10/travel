@@ -24,24 +24,52 @@ footer em{
     font-family: 'Jeju Myeongjo', serif;
 }
 
-header div h1{
+/* color_white */
+header div h1,
+header div strong,
+header div ul li a,
+section:nth-of-type(2) ul li a{
     color: white;
+}
+
+/* color_#3FABDC */
+footer p,
+section:nth-of-type(3) ol li em,
+footer strong,
+footer em{
+    color: #27769A;
+}
+
+/* text-align: center; */
+header div h1,
+header div strong,
+section:nth-of-type(1) strong,
+section:nth-of-type(2) ul li a,
+section:nth-of-type(3) h2,
+section:nth-of-type(3) p,
+section:nth-of-type(3) ol li h3,
+section:nth-of-type(3) ol li strong,
+section:nth-of-type(3) ol li em,
+section:nth-of-type(4) h2,
+footer strong,
+footer em,
+footer p{
+    text-align: center;
+}
+
+header div h1{
     font-size: 100px;
     font-weight: 50;
     letter-spacing: 0.2em;
-    text-align: center;
 }
 
 header div strong{
-    color: white;
     font-size: 25px;
     font-weight: 300;
     letter-spacing: 0.059em;
-    text-align: center;
 }
 
 header div ul li a{
-    color: white;
     font-size: 20px;
     font-weight: 50;
     letter-spacing: 0.2em;
@@ -57,28 +85,23 @@ section:nth-of-type(1) strong{
     font-size: 30px;
     font-weight: 50;
     letter-spacing: 0.1em;
-    text-align: center;
 }
 
 section:nth-of-type(2) ul li a{
-    color: white;
     font-size: 44px;
     font-weight: 50;
     letter-spacing: 0.2em;
-    text-align: center;
 }
 
 section:nth-of-type(3) h2{
     font-size: 50px;
     font-weight: 200;
     letter-spacing: 0.01em;
-    text-align: center;
 }
 
 section:nth-of-type(3) p{
     font-size: 18px;
     font-weight: 200;
-    text-align: center;
 }
 
 section:nth-of-type(3) ul li b{
@@ -91,7 +114,6 @@ section:nth-of-type(3) ol li h3{
     font-size: 26px;
     font-weight: 200;
     letter-spacing: 0.01em;
-    text-align: center;
 }
 
 section:nth-of-type(3) ol li strong{
@@ -99,22 +121,18 @@ section:nth-of-type(3) ol li strong{
     font-weight: 200;
     letter-spacing: -0.01em;
     display: block;
-    text-align: center;
 }
 
 section:nth-of-type(3) ol li em{
-    color: #3FABDC;
     font-size: 10px;
     font-weight: 200;
     display: block;
-    text-align: center;
 }
 
 section:nth-of-type(4) h2{
     font-size: 50px;
     font-weight: 200;
     letter-spacing: 0.01em;
-    text-align: center;
 }
 
 section:nth-of-type(4) p{
@@ -145,14 +163,241 @@ section:nth-of-type(4) a em{
 
 footer strong,
 footer em{
-    color: #27769A;
     font-size: 18px;
     letter-spacing: 0.062em;
-    text-align: center;
 }
 
 footer p{
-    color: #27769A;
     font-size: 12px;
-    text-align: center;
+}
+
+@media screen and (max-width:719px){
+    
+}
+
+@media screen and (min-width:720px) and (max-width:1079px){
+    header div h1{
+        font-size: 60px;
+        font-weight: 50;
+        letter-spacing: 0.2em;
+    }
+    
+    header div strong{
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 0.059em;
+    }
+    
+    header div ul li a{
+        font-size: 12px;
+        font-weight: 50;
+        letter-spacing: 0.2em;
+    }
+    
+    section:nth-of-type(1) div p{
+        font-size: 25.2px;
+        font-weight: 50;
+        letter-spacing: 0.1em;
+    }
+    
+    section:nth-of-type(1) strong{
+        font-size: 18px;
+        font-weight: 50;
+        letter-spacing: 0.1em;
+    }
+    
+    section:nth-of-type(2) ul li a{
+        font-size: 26.4px;
+        font-weight: 50;
+        letter-spacing: 0.2em;
+    }
+    
+    section:nth-of-type(3) h2{
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 0.01em;
+    }
+    
+    section:nth-of-type(3) p{
+        font-size: 10.8px;
+        font-weight: 200;
+    }
+    
+    section:nth-of-type(3) ul li b{
+        font-size: 12px;
+        font-weight: 50;
+        letter-spacing: 0.02em;
+    }
+    
+    section:nth-of-type(3) ol li h3{
+        font-size: 15.6px;
+        font-weight: 200;
+        letter-spacing: 0.01em;
+    }
+    
+    section:nth-of-type(3) ol li strong{
+        font-size: 7.8px;
+        font-weight: 200;
+        letter-spacing: -0.01em;
+        display: block;
+        line-height: 12px;
+    }
+    
+    section:nth-of-type(3) ol li em{
+        font-size: 6px;
+        font-weight: 200;
+        display: block;
+    }
+    
+    section:nth-of-type(4) h2{
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 0.01em;
+    }
+    
+    section:nth-of-type(4) p{
+        font-size: 10.8px;
+        font-weight: 200;
+        text-align: center;
+    }
+    
+    section:nth-of-type(4) a h2{
+        font-size: 31.8px;
+        font-weight: 50;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+    
+    section:nth-of-type(4) a p{
+        font-size: 12px;
+        font-weight: 200;
+        text-align: left;
+        line-height: 23.5px;
+    }
+    
+    section:nth-of-type(4) a em{
+        font-size: 10.8px;
+        font-weight: 200;
+        text-align: left;
+    }
+    
+    footer strong,
+    footer em{
+        font-size: 10.8px;
+        letter-spacing: 0.062em;
+    }
+}
+/* 폰트 사이즈 60% */
+
+@media screen and (min-width:1080px){
+    header div h1{
+        font-size: 100px;
+        font-weight: 50;
+        letter-spacing: 0.2em;
+    }
+    
+    header div strong{
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 0.059em;
+    }
+    
+    header div ul li a{
+        font-size: 20px;
+        font-weight: 50;
+        letter-spacing: 0.2em;
+    }
+    
+    section:nth-of-type(1) div p{
+        font-size: 42px;
+        font-weight: 50;
+        letter-spacing: 0.1em;
+    }
+    
+    section:nth-of-type(1) strong{
+        font-size: 30px;
+        font-weight: 50;
+        letter-spacing: 0.1em;
+    }
+    
+    section:nth-of-type(2) ul li a{
+        font-size: 44px;
+        font-weight: 50;
+        letter-spacing: 0.2em;
+    }
+    
+    section:nth-of-type(3) h2{
+        font-size: 50px;
+        font-weight: 200;
+        letter-spacing: 0.01em;
+    }
+    
+    section:nth-of-type(3) p{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    
+    section:nth-of-type(3) ul li b{
+        font-size: 20px;
+        font-weight: 50;
+        letter-spacing: 0.02em;
+    }
+    
+    section:nth-of-type(3) ol li h3{
+        font-size: 26px;
+        font-weight: 200;
+        letter-spacing: 0.01em;
+    }
+    
+    section:nth-of-type(3) ol li strong{
+        font-size: 13px;
+        font-weight: 200;
+        letter-spacing: -0.01em;
+        display: block;
+        line-height: 18px;
+    }
+    
+    section:nth-of-type(3) ol li em{
+        font-size: 10px;
+        font-weight: 200;
+        display: block;
+    }
+    
+    section:nth-of-type(4) h2{
+        font-size: 50px;
+        font-weight: 200;
+        letter-spacing: 0.01em;
+    }
+    
+    section:nth-of-type(4) p{
+        font-size: 18px;
+        font-weight: 200;
+        text-align: center;
+    }
+    
+    section:nth-of-type(4) a h2{
+        font-size: 53px;
+        font-weight: 50;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+    
+    section:nth-of-type(4) a p{
+        font-size: 20px;
+        font-weight: 200;
+        text-align: left;
+        line-height: 23.5px;
+    }
+    
+    section:nth-of-type(4) a em{
+        font-size: 18px;
+        font-weight: 200;
+        text-align: left;
+    }
+    
+    footer strong,
+    footer em{
+        font-size: 18px;
+        letter-spacing: 0.062em;
+    }
 }
