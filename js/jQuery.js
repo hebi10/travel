@@ -235,7 +235,11 @@ function shop_slide() {
   $("section:nth-of-type(4) div:nth-of-type(2) span").eq(0).addClass("active");
   $("section:nth-of-type(4) ul").addClass("active");
 
-  $(".ab").clone().appendTo("h1");
+  let listLength = $("section:nth-of-type(4) ul li").length;
+
+  for (i = 1; i < listLength + 1; i++) {
+    $("section:nth-of-type(4) ol").append($("<li></li>"));
+  }
 
   function ul_act() {
     if ($("section:nth-of-type(4) ul li.active").length == 1) {
@@ -283,3 +287,5 @@ function shop_slide() {
     }
   });
 }
+
+function mobile_scroll() {}

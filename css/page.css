@@ -301,32 +301,32 @@ section:nth-of-type(4) ul li.active {
 }
 
 section:nth-of-type(4) ul li:nth-child(1) {
-  background: url(../images/shop01.png) no-repeat right / cover;
+  background: url(../images/shop01.png) no-repeat bottom / cover;
   z-index: 6;
 }
 
 section:nth-of-type(4) ul li:nth-child(2) {
-  background: url(../images/shop02.png) no-repeat right / cover;
+  background: url(../images/shop02.png) no-repeat bottom / cover;
   z-index: 5;
 }
 
 section:nth-of-type(4) ul li:nth-child(3) {
-  background: url(../images/shop03.png) no-repeat right / cover;
+  background: url(../images/shop03.png) no-repeat bottom / cover;
   z-index: 4;
 }
 
 section:nth-of-type(4) ul li:nth-child(4) {
-  background: url(../images/shop04.png) no-repeat right / cover;
+  background: url(../images/shop04.png) no-repeat bottom / cover;
   z-index: 3;
 }
 
 section:nth-of-type(4) ul li:nth-child(5) {
-  background: url(../images/shop05.png) no-repeat right / cover;
+  background: url(../images/shop05.png) no-repeat bottom / cover;
   z-index: 2;
 }
 
 section:nth-of-type(4) ul li:nth-child(6) {
-  background: url(../images/shop06.png) no-repeat right / cover;
+  background: url(../images/shop06.png) no-repeat bottom / cover;
   z-index: 1;
 }
 
